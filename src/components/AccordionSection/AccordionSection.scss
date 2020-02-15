@@ -1,13 +1,19 @@
 .accordion {
-  background:  black;
-  color: white;
+  background: white;
+  color: black;
   padding: 12px 8px;
   .accordion-title {
     font-size: 24px;
   }
   .accordion-toggle-icon {
     position: absolute;
-    margin-top: -4px;
     width: 40px;
+    margin-left: 30px;
+    height: 25px;
+  }
+  .accordion-caret{
+    float: right;
+    margin-top: 3px;
+    margin-right: 45px;
   }
 }

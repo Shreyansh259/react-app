@@ -2,6 +2,8 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
+import { toast } from "react-toastify";
+
 import "./ProfilePage.scss";
 
 const selectAccount = state => state.account.accountSettings;
@@ -11,14 +13,14 @@ const ProfilePage = () => {
   const history = useHistory();
   if (!account) {
     history.push("/account/settings");
+    toast.error("Account settings are not configured yet!");
     return <> </>;
   }
   const { firstName, lastName, email } = account;
-  const userName = `${firstName} ${lastName}`;
 
   return (
     <div className="profile-page page">
-      <h1>Account Profile</h1>
+      <h1 className="header">Account Profile</h1>
       {/* <div className="user-title">{userName}</div>
       <div className="user-email">{email}</div> */}
       <ul className="profile-list">

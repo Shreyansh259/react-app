@@ -27,12 +27,14 @@ const Navbar = ({ userName }) => {
         src={`/${menuImageSrc}`}
         className="menu-icon"
         onClick={openMenuClickHandler}
+        alt="hamburger menu"
       ></img>
       <Link to="/" className="home-link">
-        {/* <🥱</span> */}
-        <img src="/Avatar.svg" className="avatar-logo"></img>
-        <span className="app-title">Welcome, {userName}!</span>
+        <span className="app-title">unqork</span>
       </Link>
+      <span className="user-title">Welcome, {userName}!</span>
+        <img src="/Avatar.svg" className="avatar-logo" alt="avatar logo"></img>
+        
     </header>
   );
 };

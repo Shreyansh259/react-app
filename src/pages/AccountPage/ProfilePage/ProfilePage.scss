@@ -1,11 +1,18 @@
-.profile-page{
-    .user-title{
-        font-size: 35px;
-    }
-    .profile-list{
-        list-style-type: none;
-    }
-    .list-element{
-        padding: 6px;
-    }
+.profile-page {
+  text-align: center;
+  .user-title {
+    font-size: 35px;
+  }
+  .profile-list {
+    list-style-type: none;
+  }
+  ul{
+    padding-inline-start: 0 !important;
+  }
+  .list-element {
+    padding: 6px;
+  }
+  .header {
+    font-weight: bold;
+  }
 }
