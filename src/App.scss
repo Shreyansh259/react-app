@@ -1,0 +1,30 @@
+body {
+  background-color: white;
+  color: black;
+  font-family: "Raleway", sans-serif;
+}
+a {
+  &:visited {
+    color: inherit;
+  }
+}
+
+.page {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.main-content {
+  transform: translateX(0);
+  transition: transform 0.5s ease-in;
+  &.open {
+    position: relative;
+    z-index: 0;
+    padding: 20px;
+    max-width: 728px;
+    margin: 0 auto;
+    transform: translateX(200px);
+    transition: transform 0.5s ease-out;
+  }
+}
+

@@ -1,0 +1,32 @@
+.sidebar {
+    position: fixed;
+    width: 270px;
+    height: 100%;
+    background-color:  black;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in;
+    padding: 15px;
+    font-style: bold;
+    text-align: left;
+
+  &.open{
+    transform: translateX(0);
+  }
+  .activity-link {
+    text-decoration: none !important;
+  
+  }
+  a:hover{
+    color: whitesmoke;
+  }
+  
+  .sub-section{
+    font-size: 17px;
+    margin-top: 5px;
+    text-align: left;
+    padding: 6px;
+    height: 25px;
+    text-decoration: none;
+  }
+}
+
