@@ -14,7 +14,7 @@ const ProfilePage = () => {
   if (!account) {
     history.push("/account/settings");
     toast.error("Account settings are not configured yet!");
-    return <> </>;
+    return null;
   }
   const { firstName, lastName, email } = account;
 
